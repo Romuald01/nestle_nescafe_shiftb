@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Specificity</title>
+    <style>
+        /* specificity styling start here */
+.button{
+    font-size: 2rem;
+    color:white;
+    background-color:blue;
+}
+
+a{
+    background-color: purple;
+
+}
+
+#nav div.pull-right a.button{
+    background-color: orangered;
+
+}
+#nav a.button:hover{
+background-color: yellow;
+}
+
+
+/* specificity styling ends here here */
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <div class="pull-right">
+            <a href="button button-danger">
+                Don't click here 
+            </a>
+        </div>
+    </nav>
+</body>
+</html>
